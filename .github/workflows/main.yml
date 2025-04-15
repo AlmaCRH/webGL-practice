@@ -3,21 +3,21 @@ name: MansheAI Review
 on:
   push:
     branches:
-      - main  # o la rama que quieras probar
+      - main # o la rama que quieras probar
   pull_request:
     branches:
-      - main  # o la rama que quieras probar
+      - main # o la rama que quieras probar
 
 jobs:
   mansheai:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      
+
       - name: Run MansheAI Review
-        uses: AlmaCRH/mansheai-action@v0.3.1-alpha  # Asegúrate de usar la versión correcta
+        uses: AlmaCRH/mansheai-action@v0.3.2-alpha # Asegúrate de usar la versión correcta
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          ai_key: ${{ secrets.CODESTRAL_KEY }}  
+          ai_key: ${{ secrets.CODESTRAL_KEY }}
