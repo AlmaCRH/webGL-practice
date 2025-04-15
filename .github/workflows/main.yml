@@ -19,5 +19,5 @@ jobs:
       - name: Run MansheAI Review
         uses: AlmaCRH/mansheai-action@v0.3.6-alpha
         with:
-          my_code: ${{ secrets.MY_CODE }}
+          github_token: ${{ secrets.GITHUB_TOKEN }} 
           ai_key: ${{ secrets.CODESTRAL_KEY }}
