@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
       
       - name: Run MansheAI Review
-        uses: AlmaCRH/mansheai-action@v1  # Asegúrate de usar la versión correcta
+        uses: AlmaCRH/mansheai-action@v0.1.0  # Asegúrate de usar la versión correcta
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           ai_key: ${{ secrets.CODESTRAL_KEY }}  
