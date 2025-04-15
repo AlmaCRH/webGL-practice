@@ -40,7 +40,7 @@ const drawScene = (gl, programInfo, buffers) => {
     gl.drawArrays(gl.TRIANGLE_STRIP, offset, vertexCount);
   }
 };
-//test
+//test2
 const setPositionAttribute = (gl, buffers, programInfo) => {
   const numComponents = 2;
   const type = gl.FLOAT;
