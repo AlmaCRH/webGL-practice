@@ -3,7 +3,7 @@ name: MansheAI Review
 on:
   push:
     branches:
-      - main # o la rama que quieras probar
+      - main # o la rama 2que quieras probar
   pull_request:
     branches:
       - main # o la rama que quieras2 probar
